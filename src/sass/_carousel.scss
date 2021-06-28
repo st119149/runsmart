@@ -1,0 +1,61 @@
+.carousel {
+    padding: 100px 0;
+}
+
+.slider {
+    padding: 0 100px;
+    position: relative;
+
+    &__item {
+        display: block;
+
+        img {
+            max-width: 750px;
+        }
+    }
+
+    &__next-arrow, &__prev-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 50px;
+        
+        padding: 0;
+        border: none;
+        background-color: transparent;
+
+        &::before, &::after {
+            content: '';
+            display: block;
+            width: 25px;
+            height: 5px;
+            background-color: $red;
+            border-radius: 3px;
+        }
+        
+    }
+
+    &__prev-arrow {
+        left: 0px;
+        &::after {
+            transform: rotate(-135deg) translateY(-7px);
+        }
+
+        &::before {
+            transform: rotate(-45deg) translateY(-7px);
+        }
+    }
+
+    &__next-arrow {
+        right: 0px;
+        &::after {
+            transform: rotate(135deg) translateY(-7px);
+        }
+
+        &::before {
+            transform: rotate(45deg) translateY(-7px);
+        }
+    }
+
+}

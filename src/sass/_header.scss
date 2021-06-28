@@ -1,0 +1,41 @@
+.header {
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+    
+    &__logo {
+        display: block;
+        max-width: 251px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__official {
+        text-align: center;
+        font-size: 15px;
+        color: #fff;
+        span {
+            margin-top: 3px;
+            display: block;
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+
+    &__call {
+        text-align: right;
+    }
+
+    &__phone {
+        display: block;
+        font-size: 18px;
+        font-weight: 700;
+        color: #fff;
+        text-decoration: none;
+    }
+
+}
